@@ -1,0 +1,52 @@
+:root {
+    background-color: azure;
+    font-size: large;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+ 
+/*Everything else*/
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
