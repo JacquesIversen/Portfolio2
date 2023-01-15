@@ -105,3 +105,11 @@ h1, h2, h3, h4 {
     transform: translateY(-0.2rem);
     transition: transform 150ms;
 }
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
