@@ -130,3 +130,36 @@ h1, h2, h3, h4 {
 .hud-main-text {
     text-align: center;
 }
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid blue;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: blue;
+    width: 0%;
+}
+
+/* Highscore Page */
+
+form {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 gray;
+}
+
+input::placeholder {
+    color: gray;

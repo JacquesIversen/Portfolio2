@@ -1,7 +1,8 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-const questionsCounterText = document.getElementById("questionCounter");
+const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
+const progressBarFull = document.getElementById("progressbarFull")
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -58,11 +59,16 @@ startGame = () => {
 getNewQuestion = () => {
 
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
+        localStorage.setItem('mostRecentScore', score);
         // END PAGE
         return window.location.assign("/highscore.html");
     }
     questionCounter++;
-    questionCountertext.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `Question${questionCounter}/${MAX_QUESTIONS}`;
+
+    // Progress bar 
+
+    progressBarFull.style.width = '${(questionCounter / MAX_QUESTIONS) * 100}%';
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -108,3 +114,18 @@ getNewQuestion = () => {
         scoreText.innerText = score;
     };
 
+
+    // Highscore Page
+
+    const username = document.getElementById("username");
+    const saveScoreBtn = document.getElementById("saveScoreBtn");
+    const mostRecentScore = localStorage.getItem('mostRecentScore');
+
+    username.addEventListener("keyup", () => {
+        saveScoreBtn.disabled = !username.value;
+    });
+
+    saveHighScore = e => {
+        console.log("clicked the save button!");
+        e.preventDefault();
+    }
