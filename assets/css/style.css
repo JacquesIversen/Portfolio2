@@ -163,3 +163,22 @@ input {
 
 input::placeholder {
     color: gray;
+}
+
+
+/* Highscores List */
+
+#highScoresList {
+    list-style: none;
+    padding-left:0;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+    transform: 1.1;
+}
