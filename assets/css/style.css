@@ -1,5 +1,5 @@
 :root {
-    background-color: azure;
+    background-color: rgb(177, 148, 148)   ;
     font-size: large;
 }
 
@@ -11,8 +11,8 @@
 }
 
 h1, h2, h3, h4 {
-    font-weight: 400;
-    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
     color: #555;
     text-transform: uppercase;
 }
