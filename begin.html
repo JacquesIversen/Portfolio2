@@ -10,21 +10,16 @@
     <div class="container">
         <div id="home" class="center column">
             <div id="hud">
-                <div id="hud-item">
-                    <p id="progressText" class="hud-prefix">
-                        Question
-                    </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
-                    </div>    
+                <div id="hud-item-left">
+                    <p class="hud-prefix">Question</p>
+                    <h1 class="hud-main-text" id="questionCounter"></h1>
                 </div>
-                <div id="hud-item">
+                <div id="hud-item-right">
                     <p class="hud-prefix">Score</p>
-                    <h1 class="hud-main-text" id="score">1/3</h1>
+                    <h1 class="hud-main-text" id="score">0</h1>
                 </div>
             </div>
-
-            <h2 id="question">Question</h2>
+            <h2 id="question">Choose Your Answer</h2>
             <div class="choice-container">
                 <p  class="choice-prefix">A</p>
                 <p class="choice-text" data-number="1">Choice 1</p>
@@ -41,18 +36,6 @@
                 <p  class="choice-prefix">D</p>
                 <p class="choice-text" data-number="4">Choice 4</p>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
             <a class="btn" href="/begin.html">Home</a>
             <a class="btn" href="/highscore.html">Check the Highscores!</a>
         </div>

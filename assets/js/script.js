@@ -1,5 +1,6 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
+const questionCounterText = document.getElementById("questionCounter")
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
@@ -70,7 +71,7 @@ let questions = [
 ];
 
 // Point system
-const CORRECT_BONUS = 10;
+const CORRECT_BONUS = 1;
 const MAX_QUESTIONS = 10;
 
 startGame = () => {
@@ -87,7 +88,7 @@ getNewQuestion = () => {
       return window.location.assign("/highscore.html");
   }
   questionCounter++;
-  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+  questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
 
   // Progress bar 
   
@@ -116,13 +117,13 @@ choices.forEach(choice => {
       const selectedChoice = e.target;
       const selectedAnswer = selectedChoice.dataset["number"];
 
-      const classToApply =
-        selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+    const classToApply =
+    selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
-    if (classToApply === "correct") {
-      incrementScore(CORRECT_BONUS);
-    }
-
+      if (classToApply === "correct") {
+        incrementScore(CORRECT_BONUS);
+      }
+  
 
     selectedChoice.parentElement.classList.add(classToApply);
             

@@ -77,7 +77,7 @@ h1, h2, h3, h4 {
     transform: none;
 }
 
-/* Quiz Css styling */
+/* Quiz Css styling found in js. */
 
 .choice-container {
     display: flex;
@@ -90,12 +90,14 @@ h1, h2, h3, h4 {
 
 .choice-prefix {
     padding: 1.5rem 2.5rem;
-    background-color: aqua;
+    background-color: rgb(13, 17, 17);
     color: white;
+    font-weight: 600;
 }
 
 .choice-text {
     padding: 1.5rem;
+    width: 100%;
 }
 
 .choice-container:hover {
@@ -115,33 +117,14 @@ h1, h2, h3, h4 {
 
 /* HUD DISPLAY */
 
-#hud {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    font-size: large;
-}
-
 .hud-prefix {
     text-align: center;
-    font-size: larger;
+    font-size: 2rem;
 }
-
 .hud-main-text {
     text-align: center;
 }
 
-#progressBar {
-    width: 20rem;
-    height: 4rem;
-    border: 0.3rem solid blue;
-}
-
-#progressBarFull {
-    height: 3.4rem;
-    background-color: blue;
-    width: 0%;
-}
 
 /* Highscore Page */
 
