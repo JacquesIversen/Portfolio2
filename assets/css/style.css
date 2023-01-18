@@ -1,10 +1,11 @@
 :root {
     background-color: rgb(177, 148, 148)   ;
-    font-size: large;
+    font-size: 65%;
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: black;
@@ -17,6 +18,27 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 
+h1 {
+    font-size: 5.5rem;
+    color: #555;
+    margin-bottom: 5rem;
+}
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+
  
 /*Everything else*/
 
@@ -28,6 +50,7 @@ h1, h2, h3, h4 {
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
+    padding: 3rem;
 }
 
 .container > * {
@@ -47,6 +70,10 @@ h1, h2, h3, h4 {
 .justify-center {
     text-align: center;
 }
+
+.text-center {
+    text-align: center;
+  }
 
 .hidden {
     display: none;
@@ -121,8 +148,22 @@ h1, h2, h3, h4 {
     text-align: center;
     font-size: 2rem;
 }
+
 .hud-main-text {
     text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid black;
+    margin-top: 2rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: black;
+    width: 0%;
 }
 
 
