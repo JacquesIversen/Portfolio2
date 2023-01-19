@@ -46,19 +46,20 @@ Questions are called upon, and written in line 13-56 (Script.js)
 # End page
 
 No matter what outcome your result may be, you ultimately find yourself in the end page. Here you find 3 options,
+In order for the game not to crash, an additional Javascript file was created end.js. This host the functions for the final page. 
 - to save your username (This will not have an effect, as whether a local, or external highscore has been added.)
 - Restart the quiz, which will put you at the start of the quiz. (Note questions are thrown at you random. As the maxquestions are put at 5, you'll be able to add lots of questions, and it will random give you 5 questions to furfill the quiz.)
 - Go Home. This will take you to the inspiring front page. 
 
 
 
-## Testing. 
+# Testing. 
 
 
 
-# Validator Testing
+## Validator Testing
 
-## HTML 
+### HTML 
 - Index.html / No errors or faults.
 #
 <a href="https://ibb.co/8d8d5Lv"><img src="https://i.ibb.co/gPgPTLq/Screen-Shot-2023-01-19-at-8-47-22-PM.png" alt="Screen-Shot-2023-01-19-at-8-47-22-PM" border="0"></a>
@@ -69,6 +70,7 @@ No matter what outcome your result may be, you ultimately find yourself in the e
 #
 <a href="https://ibb.co/jMw0pHv"><img src="https://i.ibb.co/QNHS5XF/Screen-Shot-2023-01-19-at-8-49-12-PM.png" alt="Screen-Shot-2023-01-19-at-8-49-12-PM" border="0"></a>
 
+### CSS
 - style.css / No errors or faults.
 #
 <a href="https://ibb.co/mzMkFQd"><img src="https://i.ibb.co/s3MnJLc/Screen-Shot-2023-01-19-at-8-59-15-PM.png" alt="Screen-Shot-2023-01-19-at-8-59-15-PM" border="0"></a>
