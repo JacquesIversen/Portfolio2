@@ -1,5 +1,5 @@
 :root {
-    background-color: rgb(177, 148, 148)   ;
+    background-color: lightskyblue;
     font-size: 65%;
 }
 
@@ -14,29 +14,27 @@
 h1, h2, h3, h4 {
     font-weight: 600;
     margin-bottom: 3rem;
-    color: #555;
+    color: grey;
     text-transform: uppercase;
     text-align: center;
 }
 
 h1 {
-    font-size: 4.5rem;
     color: #555;
     margin-bottom: 5rem;
 }
 h1 > span {
-    font-size: 2.4rem;
     font-weight: 500;
   }
   
   h2 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     margin-bottom: 4rem;
     font-weight: 700;
   }
   
   h3 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 500;
   }
 
@@ -85,16 +83,16 @@ h1 > span {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0,1rem solid coral;
+    border: 0,1rem solid rgb(7, 7, 7);
     margin-bottom: 1rem;
     text-decoration: none;
-    color: blueviolet;
+    color: gray;
     background-color: aliceblue;
 }
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1,4rem 0 black;
+    box-shadow: 0 0.4rem 1,4rem 0 rgb(102, 97, 97);
     transform: translateY(-0.2rem);
     transition: transform 150ms;
 }
@@ -112,13 +110,13 @@ h1 > span {
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;
-    border: 0.1rem solid black;
-    background-color: wheat;
+    border: 0.2rem solid gray;
+    background-color: white;
 }
 
 .choice-prefix {
     padding: 1.5rem 2.5rem;
-    background-color: rgb(13, 17, 17);
+    background-color: red;
     color: white;
     font-weight: 600;
 }
@@ -130,7 +128,7 @@ h1 > span {
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1,4rem 0 black;
+    box-shadow: 0 0.4rem 1,4rem 0 gray;
     transform: translateY(-0.2rem);
     transition: transform 150ms;
 }
@@ -145,11 +143,6 @@ h1 > span {
 
 /* HUD DISPLAY */
 
-#hud {
-    display: flex;
-    justify-content: space-between;
-}
-
 .hud-prefix {
     text-align: center;
     font-size: 2rem;
@@ -162,13 +155,14 @@ h1 > span {
 #progressBar {
     width: 20rem;
     height: 4rem;
-    border: 0.3rem solid black;
+    border: 0.3rem solid gray;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #progressBarFull {
     height: 3.4rem;
-    background-color: black;
+    background-color: gray;
     width: 0%;
 }
 
@@ -196,7 +190,7 @@ input::placeholder {
 }
 
 
-/* Highscores List */
+/* Highscores List NOT USED
 
 #highScoresList {
     list-style: none;
@@ -212,3 +206,5 @@ input::placeholder {
 .high-score:hover {
     transform: 1.1;
 }
+
+*/ 

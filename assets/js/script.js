@@ -12,45 +12,45 @@ let availableQuesions = [];
 
 let questions = [
   {
-    question: "Inside which HTML element do we put the JavaScript??",
-    choice1: "<script>",
-    choice2: "<javascript>",
-    choice3: "<js>",
-    choice4: "<scripting>",
+    question: "In what team did lewis hamilton optain his first F1 World championship?",
+    choice1: "Mclaren",
+    choice2: "Mercedes AMG",
+    choice3: "Ferrari",
+    choice4: "Force India",
     answer: 1
   },
   {
     question:
-      "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    choice1: "<script href='xxx.js'>",
-    choice2: "<script name='xxx.js'>",
-    choice3: "<script src='xxx.js'>",
-    choice4: "<script file='xxx.js'>",
+      "sebastian vettel is a beloved character, but when did he win his first f1 race?",
+    choice1: "Italian GP 2008",
+    choice2: "Abu Dhabi GP 2011",
+    choice3: "Canada GP 2009",
+    choice4: "US GP 2009",
+    answer: 1
+  },
+  {
+    question: "nico rosberg is known for being the only racedriver to ever beat lewis hamilton in equal machinery, but who replaced him?",
+    choice1: "Robert Kubica",
+    choice2: "Kevin Magnussen",
+    choice3: "Valtteri Bottas",
+    choice4: "George Russell",
     answer: 3
   },
   {
-    question: " How do you write 'Hello World' in an alert box?",
-    choice1: "msgBox('Hello World');",
-    choice2: "alertBox('Hello World');",
-    choice3: "msg('Hello World');",
-    choice4: "alert('Hello World');",
-    answer: 4
-  },
-  {
-    question: "Inside which HTML element do we put the JavaScript??",
-    choice1: "<script>",
-    choice2: "<javascript>",
-    choice3: "<js>",
-    choice4: "<scripting>",
-    answer: 1
+    question: "What is the fastest topspeed acheived in the hybrid era (<2014) ?",
+    choice1: "397.36km/h (246.9mph)",
+    choice2: "372.5km/h (231.4mph)",
+    choice3: "351.7km/h (218.5mph)",
+    choice4: "360.3km/h (223.2mph)",
+    answer: 2
   },
   {
     question:
-      "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    choice1: "<script href='xxx.js'>",
-    choice2: "<script name='xxx.js'>",
-    choice3: "<script src='xxx.js'>",
-    choice4: "<script file='xxx.js'>",
+      "A grand prix race is aimed closest to what total racedistance?",
+    choice1: "280 km",
+    choice2: "290 km",
+    choice3: "300 km",
+    choice4: "340 km",
     answer: 3
   }
 ];
