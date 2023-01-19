@@ -54,14 +54,21 @@ No matter what outcome your result may be, you ultimately find yourself in the e
 
 ## Testing. 
 
+
+
 # Validator Testing
 
 ## HTML 
 - Index.html / No errors or faults.
+#
 <a href="https://ibb.co/8d8d5Lv"><img src="https://i.ibb.co/gPgPTLq/Screen-Shot-2023-01-19-at-8-47-22-PM.png" alt="Screen-Shot-2023-01-19-at-8-47-22-PM" border="0"></a>
 - game.html / No errors or faults.
+#
 <a href="https://ibb.co/3ssjynq"><img src="https://i.ibb.co/kyywgtf/Screen-Shot-2023-01-19-at-8-48-33-PM.png" alt="Screen-Shot-2023-01-19-at-8-48-33-PM" border="0"></a>
 - end.html / No errors or faults.
+#
 <a href="https://ibb.co/jMw0pHv"><img src="https://i.ibb.co/QNHS5XF/Screen-Shot-2023-01-19-at-8-49-12-PM.png" alt="Screen-Shot-2023-01-19-at-8-49-12-PM" border="0"></a>
 
 - style.css / No errors or faults.
+#
+<a href="https://ibb.co/mzMkFQd"><img src="https://i.ibb.co/s3MnJLc/Screen-Shot-2023-01-19-at-8-59-15-PM.png" alt="Screen-Shot-2023-01-19-at-8-59-15-PM" border="0"></a>
