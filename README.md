@@ -1,108 +1,67 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project 2. Build a quiz app. 
 
-Welcome JacquesIversen,
+This project is the second of four in which we are to hand in for the Code Institute Full Stack Diploma. In this project we were asked to: build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This webapp will feature a small quiz, containing 5 different questions, in the topic of Formula 1, basic facts. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Idea
+As the skillset was insanely lacking at the start of this project, numerous youtube videos have been extremely helpfull. Up upon 24 hours before handin the idea of an API-driven highscore and Animation in pages. As the hours grew short, and task were becoming harder, this had to be dropped to actually deliver on time. 
 
-## Gitpod Reminders
+85 % of this assignment is done with the help of James Q Quick youtuber and the video sequences 'build a quiz app' https://www.youtube.com/@JamesQQuick
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Front page
 
-`python3 -m http.server`
+The landing page is plain simple. You're met with a single sentence, and just one CTA: start quiz. 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/6nsq5wk/Screen-Shot-2023-01-19-at-7-47-00-PM.png" alt="Screen-Shot-2023-01-19-at-7-47-00-PM" border="0"></a>
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/pKth8fr/Screen-Shot-2023-01-19-at-7-45-27-PM.png" alt="Screen-Shot-2023-01-19-at-7-45-27-PM" border="0"></a>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+Common for all pages is a centered design who allow for screensizes < 200px .
 
-Another blue button should appear to click: _Open Browser_.
+# Quiz section
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+As all pages share design, color template is no different here. 
+Easily navigated as you only have the option to proceed. 
 
-To log into the Heroku toolbelt CLI:
+Made a bit responding with a progressbar following your steps through the 5 questions. As with the score meter. 
+#
+<a href="https://ibb.co/MSyjD3W"><img src="https://i.ibb.co/sRpDvMk/Screen-Shot-2023-01-19-at-7-47-13-PM.png" alt="Screen-Shot-2023-01-19-at-7-47-13-PM" border="0"></a>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#
+The four choices are build from Paragraphs in divs, within a div. Linked to style.css within line 106-143. 
+This design also includes the green/red color fill in event of correct/incorrect. Function to build is called from script.js in first 2 constants and again in getNewQuestion from line 69. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Progressbar is added with Css styling following line 144-174. 
+Progressbar follows a division rule, and therefore will adapt if additional or fewer questions would be added. (script.js line 78.)
+"Question X/5 is called in questionCounter++ in line 75+76"
 
-------
+Score is calculated in const on script.js line 59. and share design with progressbar in style.css line 168. 
 
-## Release History
+Timeout on the Questions is added in js. 110-113, Allowing the page to load, before just throwing in a new Q, and also for better UX. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Questions are called upon, and written in line 13-56 (Script.js)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+# End page
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+No matter what outcome your result may be, you ultimately find yourself in the end page. Here you find 3 options,
+- to save your username (This will not have an effect, as whether a local, or external highscore has been added.)
+- Restart the quiz, which will put you at the start of the quiz. (Note questions are thrown at you random. As the maxquestions are put at 5, you'll be able to add lots of questions, and it will random give you 5 questions to furfill the quiz.)
+- Go Home. This will take you to the inspiring front page. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+# Validator Testing
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## HTML 
+- Index.html / No errors or faults.
+<a href="https://ibb.co/8d8d5Lv"><img src="https://i.ibb.co/gPgPTLq/Screen-Shot-2023-01-19-at-8-47-22-PM.png" alt="Screen-Shot-2023-01-19-at-8-47-22-PM" border="0"></a>
+- game.html / No errors or faults.
+<a href="https://ibb.co/3ssjynq"><img src="https://i.ibb.co/kyywgtf/Screen-Shot-2023-01-19-at-8-48-33-PM.png" alt="Screen-Shot-2023-01-19-at-8-48-33-PM" border="0"></a>
+- end.html / No errors or faults.
+<a href="https://ibb.co/jMw0pHv"><img src="https://i.ibb.co/QNHS5XF/Screen-Shot-2023-01-19-at-8-49-12-PM.png" alt="Screen-Shot-2023-01-19-at-8-49-12-PM" border="0"></a>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- style.css / No errors or faults.
